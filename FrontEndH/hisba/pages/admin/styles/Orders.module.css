@@ -1,0 +1,47 @@
+.container {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.orders-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2ba98e;
+    font-weight: bold;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orders-table th, .orders-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.orders-table th {
+    background-color: #2ba98e;
+    color: white;
+    font-weight: bold;
+}
+
+.orders-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.view-button, .approve-button {
+    margin: 5px;
+}
+
+.approve-button {
+    background-color: #2ba98e;
+    color: white;
+}
+
+.approve-button:hover {
+    background-color: #238c7c;
+}

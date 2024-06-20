@@ -1,0 +1,79 @@
+/* StoreRequest.module.css */
+.container {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  transition: all 0.3s ease;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #2ba98e;
+}
+
+.inputGroup input,
+.inputGroup textarea,
+.inputGroup select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #2ba98e;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus,
+.inputGroup select:focus {
+  border-color: #2980b9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton {
+  background-color: #2ba98e;
+  color: #ffffff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #136d5a;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}

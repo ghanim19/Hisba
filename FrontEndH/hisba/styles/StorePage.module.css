@@ -1,0 +1,275 @@
+.storeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4; /* subtle background for the overall container */
+  }
+  
+  .storeHeader {
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5); /* darken the background slightly to enhance text visibility */
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .coverContent {
+    width: 100%;
+    padding: 20px;
+    backdrop-filter: blur(5px); /* subtle blur effect for the overlay */
+  }
+  
+  .storeName {
+    font-size: 3.5rem; /* dynamic size for responsiveness */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    background-color: #2ba98e;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .storeName:hover {
+    transform: scale(1.1);
+  }
+  
+  .headerDetails {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .storeType, .storePhone {
+    font-weight: 300;
+  }
+  
+  .headerRating {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+  
+  .headerRating .ratingValue {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .productsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem 0;
+    width: 90%;
+  }
+  
+  .productCard {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease-out;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .productCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+  
+  
+  .productImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .productDetails {
+    padding: 10px;
+    text-align: center;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 80%;
+  }
+  
+  .productCard:hover .productDetails {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  .productPriceTag {
+    background-color: #f80000ce;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 18px;
+    margin: 10px auto;
+    display: block;
+    width: fit-content;
+  }
+  
+  .productActions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .addButton, .detailsLink {
+    background-color: #2ba98e;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.4s, transform 0.2s;
+  }
+  
+  .addButton:hover, .detailsLink:hover {
+    background-color: hsl(167, 66%, 32%);
+    transform: scale(1.05);
+  }
+  
+  
+  .commentSection {
+    width: 80%;
+    margin: 40px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .feedbackContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .inputField:focus, .submitButton:hover {
+    border-color: #2ba98e;
+    box-shadow: 0 0 8px #2ba98e9f;
+  }
+  
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    background-color: #2ba98e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #0f7660;
+  }
+  
+  .ratingStars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ratingStars label {
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+    margin-left: 27px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .ratingStars label:hover {
+    transform: scale(1.2);
+    color: #ffc107;
+  }
+  
+  .ratingStars input[type="radio"] {
+    appearance: none;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  .ratingStars input[type="radio"]:checked + label {
+    transform: scale(1.1);
+    color: #ffc107;
+  }
+  
+
+
+
+
+
+  .ratingDisplay {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+ 
+  
+  .ratingDisplay {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+ 
+  
+  .commentText {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 5px;
+  }
+  
+  .commentAuthor {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    align-self: flex-end;
+    background-color: #2ba98e;
+  }
+  
+  
+  .inputField {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }

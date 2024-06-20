@@ -1,0 +1,313 @@
+.storeContainer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 2rem auto;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.storeHeader {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coverContent {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.storeName {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.storeType, .storePhone {
+    font-size: 1.2rem;
+}
+
+.coverFormLabel {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.coverFormLabel:hover {
+    background-color: #0056b3;
+}
+
+.coverInput {
+    display: none;
+}
+
+.uploadButton {
+    display: inline-block;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #28a745;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.uploadButton:hover {
+    background-color: #218838;
+}
+
+.productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.productCard {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 1rem);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+}
+
+.productImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.productDetails {
+    padding: 1rem;
+}
+
+.productPriceTag {
+    margin-top: 0.5rem;
+}
+
+.productPrice {
+    font-size: 1.5rem;
+    color: #2ba98e;
+}
+
+.productActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.editButton, .deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #2ba98e;
+}
+
+.addButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2ba98e;
+    color: #ffffff;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+.addButton:hover {
+    background-color: #23907c;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.editProductForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.productInput {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.saveButton {
+    background-color: #2ba98e;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.saveButton:hover {
+    background-color: #23907c;
+}
+
+.cancelButton {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancelButton:hover {
+    background-color: #c0392b;
+}
+
+.storeEditForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.storeInput {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.deleteConfirmModal, .coverConfirmModal {
+    text-align: center;
+}
+
+.deleteConfirmModal button.confirm, .coverConfirmModal button.confirm {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteConfirmModal button.cancel, .coverConfirmModal button.cancel {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.deleteConfirmModal button.confirm:hover, .coverConfirmModal button.confirm:hover {
+    background-color: #c9302c;
+}
+
+.deleteConfirmModal button.cancel:hover, .coverConfirmModal button.cancel:hover {
+    background-color: #aaa;
+}
+
+.storeRating {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.starIcon {
+    color: #FFD700;
+    margin-right: 0.25rem;
+}
+.addProductForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.productInput {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.productInput:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.saveButton {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.saveButton:hover {
+    background-color: #218838;
+}
+
+.cancelButton {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cancelButton:hover {
+    background-color: #c82333;
+}

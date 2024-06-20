@@ -1,0 +1,224 @@
+
+.navbar {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+border-radius: 50px;
+  position: fixed;
+  top: 2%; /* ضمان أن النافبار يظل في الأعلى */
+  left: 10%; /* بداية النافبار من الجانب الأيسر */
+  right: 10%; /* بداية النافبار من الجانب الأيمن لضمان التمدد عبر العرض الكامل */
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2ba98e;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.searchContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.searchInput {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  outline: none;
+  width: 100%;
+  color: #2ba98e;
+  background-color: #f0f0f0;
+  transition: all 0.3s ease-in-out;
+}
+
+.searchInput:focus {
+  border-color: #2ba98e;
+  box-shadow: 0 0 10px rgba(43, 169, 142, 0.5);
+  background-color: #fff;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.navListOpen {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.navItem {
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #2ba98e;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: #16876e;
+}
+
+.navItemDropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2px;
+  list-style: none;
+  padding: 0 0;
+  transition: all 0.9s ease;
+
+}
+
+.navItemDropdown:hover .dropdownMenu {
+  display: block;
+  width: fit-content;
+  transition: all 0.9s ease;
+
+}
+
+.dropdownItem {
+  padding: 10px 20px;
+  color: #333;
+  font-size: 15px;
+  justify-content: space-between;
+  text-decoration: none;
+  display: block;
+
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
+
+.logoutButton {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.logoutButton:hover {
+  color: #2ba98e;
+}
+
+.menuIcon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.searchIcon {
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+ 
+  .searchContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  .searchInput {
+    max-width: 100%;
+  }
+}
+/* Add these styles to Navbar.module.css */
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.searchResults {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.searchResults li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.searchResults li:hover {
+  background: #f0f0f0;
+}
+.cartIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartCount {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white; /* يضيف حد باللون الأبيض لتعزيز القراءة */
+}
+
+.cartIcon.active {
+  color: red; /* تغيير لون الأيقونة إلى الأحمر */
+}

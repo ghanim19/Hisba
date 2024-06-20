@@ -1,0 +1,209 @@
+/* styles/Stores.module.css */
+.container1 {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  
+/* styles/Stores.module.css */
+.container {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.store-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-button {
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.store-detail-card {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.store-detail-title {
+    font-weight: bold;
+    color: #2ba98e;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.upload-label {
+    display: block;
+    cursor: pointer;
+    color: #2ba98e;
+    font-weight: bold;
+}
+
+.upload-input {
+    display: none;
+}
+
+.cover-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.update-button, .delete-button, .edit-button {
+    margin-top: 10px;
+}
+
+.update-button {
+    background-color: #2ba98e;
+    color: white;
+}
+
+.update-button:hover {
+    background-color: #15715e;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.comment-card {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.comment-delete-button {
+    margin-top: 10px;
+}
+
+.load-more-button {
+    margin-top: 20px;
+}
+
+.load-more-button {
+    margin-top: 20px;
+    align-self: center;
+}
+.table-container {
+    margin-top: 20px;
+}
+
+.stores-table {
+    min-width: 650px;
+}
+
+.create-button {
+    margin: 20px 0;
+}
+
+.edit-button, .delete-button {
+    margin: 5px;
+}
+
+.edit-button {
+    background-color: #2ba98e;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #1c9177;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+  .table-container {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .stores-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .stores-table th,
+  .stores-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .stores-table th {
+    background-color: #2ba98e;
+    color: white;
+  }
+  
+  .stores-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .stores-table tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  .stores-table .edit-button,
+  .stores-table .delete-button {
+    background-color: #2ba98e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .stores-table .delete-button {
+    background-color: #ff4d4d;
+  }
+  
+  .stores-table .edit-button:hover,
+  .stores-table .delete-button:hover {
+    opacity: 0.8;
+  }
+  

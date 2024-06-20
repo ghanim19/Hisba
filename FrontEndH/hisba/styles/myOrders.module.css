@@ -1,0 +1,112 @@
+/* myOrders.module.css */
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.orderCard {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    transition: box-shadow 0.3s ease;
+}
+
+.orderCard:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.orderSummary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderSummary h3 {
+    margin: 0;
+}
+
+.orderSummary p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.detailsButton {
+    padding: 8px 12px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #218e7a;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.detailsButton:hover {
+    background-color: #218e7a;
+    color: white;
+}
+
+.orderDetails {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    padding: 0;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease, margin-top 0.5s ease;
+}
+
+.orderDetails.show {
+    max-height: 1000px; /* Adjust as needed */
+    opacity: 1;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.productImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}

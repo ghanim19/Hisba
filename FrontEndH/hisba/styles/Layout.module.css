@@ -1,0 +1,8 @@
+/* في ملف styles/Layout.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+  

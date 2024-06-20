@@ -1,0 +1,69 @@
+/* styles/TopRatedStores.module.css */
+.container {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 15px;
+}
+
+.storeButton, .viewMoreButton {
+  background-color: #2ba98e;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.storeButton:hover, .viewMoreButton:hover {
+  background-color: #238c7c;
+  transform: scale(1.05);
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.viewMoreButton {
+  margin-top: 20px;
+  font-size: 1rem;
+  padding: 12px 20px;
+  display: inline-block;
+  text-align: center;
+}

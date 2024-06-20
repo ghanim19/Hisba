@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2ba98e;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #238c7c;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  display: flow;
+}
+
+.links a:hover {
+  background-color: #1d7266;
+  transform: scale(1.1);
+}
+
+.navItemDropdown {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+
+.navItem {
+  color: white;
+  font-size: 24px;
+}
+
+.dropdownMenu {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdownItem {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownItem:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.logoutButton {
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.logoutButton:hover {
+  background-color: #ff4d4d;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .links a, .logoutButton {
+    padding: 10px 10px;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo a {
+    font-size: 20px;
+  }
+
+  .navItem {
+    font-size: 20px;
+  }
+}

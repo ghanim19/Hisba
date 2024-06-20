@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 5%;
+  width: 100%; /* Ensure full width */
+  justify-content: center; /* Center vertically */
+}
+
+.profile {
+  background: linear-gradient(to right, #2ba98e 0%, #00e3b3 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content vertically */
+  border: 1px solid white; /* Add a subtle border */
+}
+
+.profile:hover {
+  transform: translateY(-10px);
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+}
+
+.profileImage:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 1); /* Glow effect */
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputFile, .inputText {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #333;
+}
+
+.submitButton, .cancelButton {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: #2ba98e;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submitButton:hover, .cancelButton:hover {
+  background-color: #ffffff;
+  transform: translateY(-3px); /* Small lift effect */
+}
+.detail {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white; /* Separator */
+  padding-bottom: 10px;
+}
+.username {
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white; /* Separator */
+  padding-bottom: 10px;
+}
+.editButton {
+  padding: 8px 16px;
+  background-color: #ddd;
+  color: #2ba98e;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.editButton:hover {
+  background-color: #ffffff;
+  transform: scale(1.05); /* Slight scale effect */
+}

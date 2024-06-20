@@ -1,0 +1,40 @@
+/* adminStyles/AdminSidebar.module.css */
+
+.menuIcon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+  z-index: 1000;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
